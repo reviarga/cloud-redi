@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/util/headphone.css">
+    <link rel="stylesheet" href="css/util/tablet.css">
+    <link rel="stylesheet" href="css/util/laptop.css">
+    <link rel="stylesheet" href="css/component/produk/server-vps.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/javascript.js"></script>
+  </head>
+  <body>
+    <div class="img-home">
+      <!-- <img src="images/bg-home.png" class="img-container" alt=""> -->
+    </div>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-transparent relative-top"
+    >
+      <div class="container-fluid ms-2">
+        <a class="navbar-brand col-3 ms-4 ps-5" href="home.html">logo produk</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-lg-0">
+            <div class="dropdown mt-2 me-5">
+              <button class="dropbtn">Produk</button>
+              <div class="dropdown-content">
+                <div class="dropdown-submenu">
+                  <li>
+                    <img class="dropdown-icon" src="images/Archive.png" alt="">
+                    <span class="dropdown-title">Produk Unggulan</span>
+                    <ul>
+                      <a class="dropdown-item" href="produk-cloud-vps.html">
+                        <li class="dropdown-item-submenu">
+                          <span class="submenu-title">
+                            <img src="images/produk-vps.png" alt="">
+                            <span class="menu-title">Cloud VPS</span><br>
+                            <span class="title">Layanan Cloud Access</span><br>
+                            <span class="title">dengan kualitas</span><br>
+                            <span class="title"> terbaik</span>
+                          </span>
+                        </li>
+                      </a><br>
+                      <a class="dropdown-item" href="produk-server-vps.html">
+                        <li class="dropdown-item-submenu">
+                          <span class="submenu-title">
+                            <img src="images/produk-server.png" alt="">
+                            <span class="menu-title">Server VPS</span><br>
+                            <span class="title">Layanan Server VPS</span><br>
+                            <span class="title">dengan kualitas</span><br>
+                            <span class="title">terjangkau dan terbaik</span>
+                          </span>
+                        </li>
+                      </a><br>
+                      <a class="dropdown-item" href="produk-bare-metal-server.html">
+                        <li class="dropdown-item-submenu">
+                          <span class="submenu-title">
+                            <img src="images/produk-baremetal.png" alt="">
+                            <span class="menu-title">Bare Metal Server</span><br>
+                            <span class="title">Kenyamanan layanan</span><br>
+                            <span class="title">cloud yang berpadu </span><br>
+                            <span class="title">dengan kontrol</span>
+                          </span>
+                        </li>
+                      </a><br>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="dropdown-vertical"></div>
+                    <img class="dropdown-icon-2" src="images/cloud connection.png" alt="">
+                    <span class="dropdown-title">Cloud & Server</span>
+                    <ul>
+                      <a class="dropdown-item bg-transparent" href="#">
+                        <li class="dropdown-item-submenu">
+                          <span class="submenu-title">
+                            <img src="images/Vector.png" alt="">
+                            <span class="menu-title">Colocation Server</span><br>
+                          </span>
+                        </li>
+                      </a><br>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="dropdown-vertical"></div>
+                    <img class="dropdown-icon-2" src="images/web.png" alt="">
+                    <span class="dropdown-title">Domain & Website</span>
+                    <ul>
+                      <a class="dropdown-item bg-transparent" href="#">
+                        <li class="dropdown-item-submenu">
+                          <span class="submenu-title">
+                            <img src="" alt="">
+                            <span class="menu-title">Cloud Hosting</span><br>
+                          </span>
+                        </li>
+                      </a><br>
+                      <a class="dropdown-item bg-transparent" href="#">
+                        <li class="dropdown-item-submenu">
+                          <span class="submenu-title">
+                            <img src="" alt="">
+                            <span class="menu-title">Domain</span><br>
+                          </span>
+                        </li>
+                      </a><br>
+                      <a class="dropdown-item bg-transparent" href="#">
+                        <li class="dropdown-item-submenu">
+                          <span class="submenu-title">
+                            <img src="" alt="">
+                            <span class="menu-title">Website Instant</span><br>
+                          </span>
+                        </li>
+                      </a><br>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="dropdown-vertical"></div>
+                    <img class="dropdown-icon-2" src="images/Vector-1.png" alt="">
+                    <span class="dropdown-title">Solution & Addons</span>
+                    <ul>
+                      <a class="dropdown-item bg-transparent" href="#">
+                        <li class="dropdown-item-submenu">
+                          <span class="submenu-title">
+                            <img src="" alt="">
+                            <span class="menu-title">Cloud Storage Drive</span><br>
+                          </span>
+                        </li>
+                      </a><br>
+                      <a class="dropdown-item bg-transparent" href="#">
+                        <li class="dropdown-item-submenu">
+                          <span class="submenu-title">
+                            <img src="" alt="">
+                            <span class="menu-title">Sertifikat SSL</span><br>
+                          </span>
+                        </li>
+                      </a><br>
+                      <a class="dropdown-item bg-transparent" href="#">
+                        <li class="dropdown-item-submenu">
+                          <span class="submenu-title">
+                            <img src="" alt="">
+                            <span class="menu-title">Lisensi</span><br>
+                          </span>
+                        </li>
+                      </a><br>
+                    </ul>
+                  </li>
+                  </div>
+              </div>
+            </div>
+            <li class="nav-item  me-5">
+              <a class="nav-link mt-3" href="harga.html">Harga</a>
+            </li>
+            <div class="dropdown mt-2 me-5">
+              <button class="dropbtn">Bantuan</button>
+              <div class="dropdown-content">
+                <div class="dropdown-submenu bantuan-size">
+                  <li>
+                    <img class=""  alt="">
+                    <span class="dropdown-title"></span>
+                    <ul>
+                      <a class="dropdown-item-bantuan" href="bantuan-panduan.html">
+                        <li class="dropdown-item-submenu">
+                          <span class="submenu-title">
+                            <img src="images/images-bantuan/book.png" alt="">
+                            <span class="menu-title">Panduan</span><br>
+                            <span class="bantuan-title">Kami menyediakan panduan</span><br>
+                            <span class="bantuan-title">lengkap untuk membantu Anda </span><br>
+                            <span class="bantuan-title">mengatur dan mengelola layanan</span><br>
+                            <span class="bantuan-title">cloud server dengan mudah</span>                            
+                          </span>
+                        </li>
+                      </a><br>
+                      <a class="dropdown-item-bantuan" href="bantuan-pembayaran.html">
+                        <li class="dropdown-item-submenu">
+                          <span class="submenu-title">
+                            <img src="images/images-bantuan/Vector 57.png" alt="">
+                            <span class="menu-title">Pembayaran</span><br>
+                            <span class="bantuan-title">Informasi mengenai cara </span><br>
+                            <span class="bantuan-title">melakukan pembayaran</span>
+                          </span>
+                        </li>
+                      </a><br>
+                    </ul>
+                  </li>
+                  <li>
+                    <img  alt="">
+                    <span ></span>
+                    <ul>
+                      <a class="dropdown-item-bantuan" href="bantuan-artikel.html">
+                        <li class="dropdown-item-submenu">
+                          <span class="submenu-title">
+                            <img src="images/images-bantuan/Vector.png" alt="">
+                            <span class="menu-title">Artikel</span><br>
+                            <span class="bantuan-title">Artikel seputar web hosting, dunia </span><br>
+                            <span class="bantuan-title">bisnis, dll</span>
+                          </span>
+                        </li>
+                      </a><br>
+                      <a class="dropdown-item-bantuan" href="bantuan-kontak.html">
+                        <li class="dropdown-item-submenu">
+                          <span class="submenu-title">
+                            <img src="images/images-bantuan/Phone.png" alt="">
+                            <span class="menu-title">Kontak</span><br>
+                            <span class="bantuan-title">Jika Anda menghadapi masalah,</span><br>
+                            <span class="bantuan-title">jangan ragu untuk menghubungi </span><br>
+                            <span class="bantuan-title">dukungan teknis kami yang </span><br>
+                            <span class="bantuan-title">tersedia sepanjang waktu</span>
+                          </span>
+                        </li>
+                      </a><br>
+                    </ul>
+                  </li>
+                  <li>
+                    <img  alt="">
+                    <span ></span>
+                    <ul>
+                      <a class="dropdown-item-bantuan" href="bantuan-kamus.html">
+                        <li class="dropdown-item-submenu">
+                          <span class="submenu-title">
+                            <img src="images/images-bantuan/book.png" alt="">
+                            <span class="menu-title">Kamus Hosting</span><br>
+                            <span class="bantuan-title">Kumpulan dari istilah-istilah </span><br>
+                            <span class="bantuan-title">penting dalam web hosting</span><br>
+                            <span class="bantuan-title">dukungan teknis kami yang </span><br>
+                            <span class="bantuan-title">tersedia sepanjang waktu</span>
+                          </span>
+                        </li>
+                      </a><br>
+                    </ul>
+                  </li>
+                  </div>
+              </div>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link me-5 mt-3 pe-5" href="promo.html">Promo</a>
+            </li>
+          </ul>
+          <div class="btn-group">
+            <div class="dropdown">
+              <button class="dropbtn btn-login">LOGIN</button>
+              <div class="dropdown-content  btn-login-title rounded-3">
+              <a href="login.html" style="font-weight: 600; color: #575757;">Client Console</a>
+              <a href="login.html" style="font-weight: 600; color: #575757;">Client Area</a>
+              </div>
+            </div>
+            <a href="register.html" class="btn-register ">REGISTRASI</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- HOME -->
+    <nav id="home" class="home">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="home-text">
+            <h1>Server VPS Pertama Dengan Harga Terjangkau</h1>
+            <h2>
+                Layanan Server VPS untuk kebutuhan bisnis Anda dengan berbagai keunggulan
+            </h2>
+            <p>Start from</p>
+            <div class="btn-home">
+              <a href="" class="home-btn-1">Get Started</a>
+            </div>
+        </div>
+      </div>
+    </nav>
+    <!-- HOME END-->
+
+<!-- HEADER -->
+
+
+    <!-- FOOTER -->
+    <nav id="#" class="footer">
+      <div class="container-fluid">
+        <div class="container">
+            <div class="container-server">
+                <h1 class="server-text">High Performance</h1>
+                <div class="server-text-fade">
+                    <p>Performa yang stabil dengan kecepatan yang  tinggi, siap untuk mendukung kebutuhan bisnis Anda</p>
+                </div>
+            </div>
+            <div class="footer-menu row">
+                <h1 class=" col-lg-2 col-2 ms-4">RAM</h1>
+                <h1 class=" col-lg-2 col-2">CPU</h1>
+                <h1 class=" col-lg-2 col-2 mb-4">Storage Space</h1>
+                <div class="menu row">
+                  <h2 class="col-lg-2 col-2 ms-4 mt-3">1 GB</h2>
+                  <h2 class="col-lg-2 col-2 mt-3">1 Core</h2>
+                  <h2 class="col-lg-3 col-2 mt-3">&nbsp;30 GB</h2>
+                  <h3 class="col-lg-2 col-2 mt-3">Rp. 50.000 <span id="footer-demo">/Bulan</span>
+                    <p>/Bulan</p>
+                  </h3>
+                  <button type="button" class="col-lg-2">BERLANGGANAN</button>
+                </div>
+                <div class="menu row">
+                  <h2 class="col-lg-2 col-2 ms-4 mt-3">4 GB</h2>
+                  <h2 class="col-lg-2 col-2 mt-3">2 Core</h2>
+                  <h2 class="col-lg-3 col-2 mt-3">&nbsp;80 GB</h2>
+                  <h3 class="col-lg-2 col-2 mt-3">Rp. 95.000<span id="footer-demo">/Bulan</span>
+                    <p>/Bulan</p>
+                  </h3>
+                  <button type="button" class="col-lg-2 col-4">BERLANGGANAN</button>
+                </div>
+                <div class="menu row">
+                  <h2 class="col-lg-2 col-2 ms-4 mt-3">64 GB</h2>
+                  <h2 class="col-lg-2 col-2 mt-3">16 Core</h2>
+                  <h2 class="col-lg-3 col-2 mt-3">&nbsp;510 GB</h2>
+                  <h3 class="col-lg-2 col-2 mt-3">Rp. 2.573.000 <span id="footer-demo">/Bulan</span>
+                    <p>/Bulan</p>
+                  </h3>
+                  <button type="button" class="col-lg-2">BERLANGGANAN</button>
+                </div>
+                <a href="#" class="col-md-4 offset-md-9 mb-4">LIHAT SELENGKAPNYA</a>
+              </div>
+              <div class="container-server">
+                <h1 class="server-text">High Availability</h1>
+                <div class="server-text-fade">
+                    <p>Sangat ideal untuk aplikasi yang memerlukan performa super cepat dan juga andal</p>
+                </div>
+            </div>
+          <div class="footer-menu row">
+            <h1 class=" col-lg-2 col-2 ms-4">RAM</h1>
+            <h1 class=" col-lg-2 col-2">CPU</h1>
+            <h1 class=" col-lg-2 col-2 mb-4">Storage Space</h1>
+            <div class="menu row">
+              <h2 class="col-lg-2 col-2 ms-4 mt-3">1 GB</h2>
+              <h2 class="col-lg-2 col-2 mt-3">1 Core</h2>
+              <h2 class="col-lg-3 col-2 mt-3">&nbsp;30 GB</h2>
+              <h3 class="col-lg-2 col-2 mt-3">Rp. 50.000 <span id="footer-demo">/Bulan</span>
+                <p>/Bulan</p>
+              </h3>
+              <button type="button" class="col-lg-2">BERLANGGANAN</button>
+            </div>
+            <div class="menu row">
+              <h2 class="col-lg-2 col-2 ms-4 mt-3">4 GB</h2>
+              <h2 class="col-lg-2 col-2 mt-3">2 Core</h2>
+              <h2 class="col-lg-3 col-2 mt-3">&nbsp;80 GB</h2>
+              <h3 class="col-lg-2 col-2 mt-3">Rp. 95.000<span id="footer-demo">/Bulan</span>
+                <p>/Bulan</p>
+              </h3>
+              <button type="button" class="col-lg-2 col-4">BERLANGGANAN</button>
+            </div>
+            <div class="menu row">
+              <h2 class="col-lg-2 col-2 ms-4 mt-3">64 GB</h2>
+              <h2 class="col-lg-2 col-2 mt-3">16 Core</h2>
+              <h2 class="col-lg-3 col-2 mt-3">&nbsp;510 GB</h2>
+              <h3 class="col-lg-2 col-2 mt-3">Rp. 2.573.000 <span id="footer-demo">/Bulan</span>
+                <p>/Bulan</p>
+              </h3>
+              <button type="button" class="col-lg-2">BERLANGGANAN</button>
+            </div>
+            <a href="#" class="col-md-4 offset-md-9 mb-4">LIHAT SELENGKAPNYA</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="footer-end">
+      <div class="footer-bantuan">
+        <h1>Layanan Server Dengan Kualitas Terbaik</h1>
+        <p>Percayakan Layanan Anda bersama Kami</p>
+      </div>
+      <img class="img-1" src="images/server.png" alt="">
+      <img class="img-2" src="images/shield2.png" alt="">  
+      <img class="img-3" src="images/server connection.png" alt="">
+      <img class="img-4" src="images/approve folder2.png" alt="">
+      <div class="bantuan">
+        <img src="images/img-batuan.png" alt="">
+        <h1>Perlu Bantuan?</h1>
+        <p>Kami akan membantu dan melayani Anda</p>
+        <a href="#" class="">HUBUNGI KAMI</a>
+      </div>
+    </nav>
+  </body>
+</html>

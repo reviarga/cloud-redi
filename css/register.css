@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  body{
+    background-image: linear-gradient(to bottom right, #D7E5BE 1%, #81BE92 30%, #3C5844 71%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .login{
+    background-color: white;
+    width: 100vh;
+    height: 100vh;
+  }
+
+  .container{
+    width: 95vh;
+    height: 100vh;
+  }
+
+  .container .container-img{
+    background-color: #AEE8BF;
+    border-radius: 50%;
+    padding: 2vh;
+    margin-top: 10vh;
+    margin-left: 24vh;
+    cursor: pointer;
+    margin-bottom: 5vh;
+  }
+
+  .container h1{
+    position: absolute;
+    top: 13vh;
+    left: 40vh;
+    color: #575757;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .form-input input{
+    background-color: #EEEEEE;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    /* width: 50vh; */
+  }
+  form a{
+    color: #5F93B6;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  form .form-btn-1{
+    background-color: white;
+    box-shadow: 0 0 2px #0000002f, 0 0 20px #0000002c;
+    color: black;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    width: 50vh;
+  }
+
+  form .form-btn-2{
+    background-color: #BFE08D;
+    box-shadow: 0 0 2px #0000002f, 0 0 20px #0000002c;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    width: 50vh;
+  }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .login{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .container-img{
+    margin-top: 10vh;
+    margin-left: 19vh;
+    margin-bottom: 10vh;
+  }
+
+  .container h1{
+    position: absolute;
+    top: 22vh;
+    left: 15vh;
+    font-weight: 700;
+  }
+  form .form-btn-2{
+    margin-left: 10px;
+    padding: 10px 0px;
+
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+
+  .login{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .container h1{
+    position: absolute;
+    top: 20vh;
+    left: 25vh;
+    font-weight: 700;
+  }
+  form .form-btn-2{
+    margin-left: 13vh;
+    padding: 0px 0px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .login{
+    background-color: white;
+    width: 100vh;
+    height: 100vh;
+  }
+
+  .container{
+    width: 95vh;
+    height: 100vh;
+  }
+
+  .container .container-img{
+    background-color: #AEE8BF;
+    border-radius: 50%;
+    padding: 2vh;
+    margin-top: 10vh;
+    margin-left: 24vh;
+    cursor: pointer;
+    margin-bottom: 5vh;
+  }
+
+  .container h1{
+    position: absolute;
+    top: 13vh;
+    left: 40vh;
+    color: #575757;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .form-input input{
+    background-color: #EEEEEE;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    /* width: 50vh; */
+  }
+  form a{
+    color: #5F93B6;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  form .form-btn-2{
+    background-color: #BFE08D;
+    box-shadow: 0 0 2px #0000002f, 0 0 20px #0000002c;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+    width: 60%;
+  }
+
+}

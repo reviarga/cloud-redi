@@ -1,0 +1,151 @@
+.home-kamus{    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #F0F0F0; */
+}
+.home-text-kamus{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    width: 100vh;
+    font-weight: 600;
+  }
+  .home-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-form input{
+    background-color: #EEEEEE;
+    border-radius: 10px;
+  }
+  .home-form button{
+    padding: 9px 20px;
+    border-radius: 10px;
+    color: white;
+    background-image: linear-gradient(
+        to right bottom,
+        #bfe08d 0%,
+        #bfe08d 0%,
+        #8e3dcb 150%
+      );  
+    }
+
+/* HEADER */
+.header{
+    background-color: white;
+    width: 100%;
+    height: 200vh;
+}
+.spancing{
+    height: 10vh;
+  }
+.header-kamus{
+    display: grid;
+    gap: 60px 20px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 2px #0000002f, 0 0 20px #0000002c;
+    width: 170vh;
+    height: 70vh;
+    border-radius: 10px;
+}
+.header-kamus h1{
+    margin-bottom: 3vh;
+    text-align: left;
+    font-size: 48px;
+    color: #575757;
+}
+.header-kamus h2{  
+    margin-bottom: 5vh;
+    text-align: left;
+    font-size: 20px;
+    color: #575757;
+}
+.kamus-img{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kamus-img h1{
+    margin-left: 10vh;
+    width: 93vh;
+    font-size: 24px;
+    color: #A6A6A6;
+}
+
+
+    @media only screen and (min-width: 0px) and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-1"] {
+        width: 100%;
+      }
+      .header{
+        height: 210vh;
+      }
+      .home-text-kamus{
+        font-size: 24px;
+        width: 40vh;
+      }
+      .home-form button{
+        padding: 9px 10px;
+      }
+      .header-kamus{
+        display: block;
+        width: 40vh;
+        height: 100vh;
+        padding-top: 6vh;
+    }
+    .header-kamus h1{
+        text-align: center;
+        font-size: 30px;
+        color: #575757;
+    }
+    .header-kamus h2{ 
+        text-align: center;
+        font-size: 16px;
+    }
+    .kamus-img{
+        margin-top: 20vh;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .kamus-img h1{
+        text-align: center;
+        margin-left: 5vh;
+        margin-top: 10vh;
+        width: 30vh;
+        font-size: 16px;
+        color: #A6A6A6;
+    }
+    }
+
+    @media only screen and (min-width: 768px) and ( max-width: 1000px) {
+        /* For tablets: */
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+        .header{
+            height: 320vh;
+        }
+      }
+
+      @media only screen and (min-width: 1000px)  and ( max-width: 1500px){}
+
+
+
+

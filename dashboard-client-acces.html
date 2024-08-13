@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- choose one -->
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/component/dashboard/style.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/javascript.js"></script>
+  </head>
+  
+  <body>
+    <div id="logo">
+        <span class="big-logo fw-bold me-5"><a class="text-dark" href="dashboard-client.html">Nama Produk</a></span>
+        <a class="logout" href=""><i  data-feather="log-out"></i></a>
+        <!-- <span class="small-logo">S!M</span> -->
+    </div>
+    <div id="left-menu">
+        <ul>
+            <h1 class="fw-bold">Menu</h1>
+            <li><a href="dashboard-client-compute.html">
+                <img src="images/dashboard/Vector.png" alt="">
+                <span class="fw-bold">CLOUD</span>
+            </a></li>
+            <li><a href="dashboard-client-storage.html">
+                <img src="images/dashboard/Vector1.png" alt="">
+                <span class="fw-bold">STORAGE</span>
+            </a></li>
+            <li><a href="dashboard-client-network.html">
+                <img src="images/dashboard/Vector2.png" alt="">
+                <span class="fw-bold">NETWORK</span>
+            </a></li>
+            <li><a href="dashboard-client-service.html">
+                <img src="images/dashboard/Vector3.png" alt="">
+                <span class="fw-bold">SERVICES</span>
+            </a></li>
+            <li><a href="dashboard-client-acces.html">
+                <img src="images/dashboard/Vector4.png" alt="">
+                <span class="fw-bold">ACCESS</span>
+            </a></li>
+            <li><a href="dashboard-client-billing.html">
+                <img src="images/dashboard/Vector5.png" alt="">
+                <span class="fw-bold">BILLING</span>
+            </a></li>
+            <h1 class="fw-bold">Other</h1>
+            <li><a href="#" class="bg-transparent" id="click-alert">
+                <img src="images/dashboard/User_fill.png" alt="">
+                <span class="fw-bold">Users</span>
+            </a></li>
+            <li><a href="#" class="bg-transparent">
+                <img src="images/dashboard/credit card.png" alt="">
+                <span class="fw-bold" >Top Up</span>
+            </a></li>
+        </ul>
+    </div>
+    <div id="main-content">
+        <div id="header">
+            <div class="header-left float-left">
+                <i id="toggle-left-menu" class="ion-android-menu">
+                    <i  data-feather="grid"></i>
+                </i>
+                <span class="fw-bold">Dashboard</span>
+                <span class="profile">Celline <img src="images/dashboard/User_cicrle_duotone.png" width="37" alt=""></span>
+            </div>
+            <!-- <div class="header-right float-left">
+                <i class="ion-ios-people"></i>  
+            </div> -->
+        </div>
+
+        <div id="page-container">
+            <div class="alert" id="alert">
+                <span  class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <img src="images/dashboard/User_cicrle_duotone.png"  alt="">
+                <div class="row">
+                    <h1>Profile Name</h1>
+                    <div class="col">
+                      <input type="text" class="form-control rounded-3" placeholder="First name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control rounded-3" placeholder="Last name" aria-label="Last name">
+                    </div>
+                    <h1>Email</h1>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control rounded-3" id="inputEmail4" placeholder="Email">
+                      </div>
+                      <a href="">Reset Password</a>
+                      <a href="home.html" class="log-out"><img src="images/dashboard/Sign_out_circle.png" alt="">Log Out</a>
+                  </div>
+            </div>
+            <div class="submenu-dashboard">
+                <div class="suubmenu">
+                    <div class="compute">
+                        <div class="compute-btn">
+                            <a href="" class="fw-bold">ACCESS</a>
+                        </div>
+                        <div class="create-btn">
+                            <a href="" class="fw-bold">+ create new resource</a>
+                        </div>
+                    </div>
+                    <div class="submenu-menu">
+                        <h1>Selamat Datang</h1>
+                        <p>Anda telah bergabung menjadi salah satu bagian dari kami! Ayo, kelola cloud server Anda dengan lebih mudah dan cepat bersama kami. Dengan performa terbaik, dan harga yang terjangkau</p>
+                        <h2>Core Service</h2>
+                        <div class="menu">
+                            <div class="menu-a">
+                                <a href="">Virtual Machine</a>
+                            </div>
+                            <div class="menu-a">
+                                <a href="">API Token</a>
+                            </div>
+                            <div class="menu-a">
+                                <a href="">VPC Network</a>
+                            </div>
+                            <div class="menu-a">
+                                <a href="">Object Storage</a>
+                            </div>
+                        </div>
+                        <div class="submenu-top-up">
+                            <div class="menu-top-up">
+                                <h1>Rp 55.000</h1>
+                                <h3>On Going Balance</h3>
+                            </div>
+                            <a href="">Top Up sekarang</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <span id="show-lable">Hello</span>
+
+    <script>
+        feather.replace();
+      </script>
+      <script>
+        $(document).ready(function(){
+        $("#click-alert") .click(function(){
+            $("#alert").show();
+        });
+            $("#alert").hide();
+});
+      </script>
+  </body>
+</html>
