@@ -10,7 +10,7 @@
     background-image: linear-gradient(to bottom right, #D7E5BE 1%, #81BE92 30%, #3C5844 71%);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -34,7 +34,6 @@
     background-color: #AEE8BF;
     border-radius: 50%;
     padding: 2vh;
-    margin-top: 10vh;
     margin-left: 24vh;
     cursor: pointer;
     margin-bottom: 5vh;
@@ -82,7 +81,7 @@
     width: 50vh;
   }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 768px) {
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
@@ -92,7 +91,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 160vh;
   }
 
   .container{
@@ -104,24 +103,28 @@
 
   .container .container-img{
     margin-top: 10vh;
-    margin-left: 19vh;
+    margin-left: 16vh;
     margin-bottom: 10vh;
   }
 
   .container h1{
     position: absolute;
-    top: 22vh;
-    left: 15vh;
+    top: 33vh;
+    left: 12vh;
     font-weight: 700;
   }
+  form .form-btn-1{
+    position: relative;
+    top : 0vh;
+    right: 0vh;
+  }
   form .form-btn-2{
-    margin-left: 10px;
     padding: 10px 0px;
 
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) and ( max-width: 1000px) {
   /* For tablets: */
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
@@ -141,7 +144,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
   }
 
   .container{
@@ -156,12 +159,17 @@
     left: 25vh;
     font-weight: 700;
   }
+  form .form-btn-1{
+    position: relative;
+    top : 0vh;
+    right: 10vh;
+  }
   form .form-btn-2{
-    margin-left: 13vh;
-    padding: 0px 0px;
+    margin-left: 4.5vh;
+    padding: 10px 0px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px)  and ( max-width: 1500px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
@@ -179,7 +187,7 @@
   .login{
     background-color: white;
     width: 100vh;
-    height: 100vh;
+    height: 120vh;
   }
 
   .container{
@@ -188,13 +196,11 @@
   }
 
   .container .container-img{
-    background-color: #AEE8BF;
     border-radius: 50%;
     padding: 2vh;
     margin-top: 10vh;
     margin-left: 24vh;
     cursor: pointer;
-    margin-bottom: 5vh;
   }
 
   .container h1{
@@ -219,14 +225,14 @@
     text-align: center;
   }
 
+  form .form-btn-1{
+    position: relative;
+    top : 0vh;
+    right: 0vh;
+  }
+
   form .form-btn-2{
-    background-color: #BFE08D;
-    box-shadow: 0 0 2px #0000002f, 0 0 20px #0000002c;
-    color: white;
-    border: none;
-    padding: 10px 50px;
-    border-radius: 10px;
-    width: 60%;
+    margin-left: 23vh;
   }
 
 }
