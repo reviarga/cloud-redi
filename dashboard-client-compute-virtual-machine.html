@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/component/dashboard/style.css" />
+    <link rel="stylesheet" href="css/component/dashboard/create-compute.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jQuery.js"></script>
+  </head>
+
+  <body>
+    <div id="logo">
+      <span class="big-logo fw-bold me-5"
+        ><a class="text-dark" href="dashboard-client.html">Nama Produk</a></span
+      >
+      <a class="logout" href=""><i data-feather="log-out"></i></a>
+    </div>
+    <div id="left-menu">
+      <ul>
+        <h1 class="fw-bold">Menu</h1>
+        <li>
+          <a href="dashboard-client-compute.html">
+            <img src="images/dashboard/Vector.png" alt="" />
+            <span class="fw-bold">COMPUTE</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard-client-storage.html">
+            <img src="images/dashboard/Vector1.png" alt="" />
+            <span class="fw-bold">STORAGE</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard-client-network.html">
+            <img src="images/dashboard/Vector2.png" alt="" />
+            <span class="fw-bold">NETWORK</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard-client-service.html">
+            <img src="images/dashboard/Vector3.png" alt="" />
+            <span class="fw-bold">SERVICES</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard-client-acces.html">
+            <img src="images/dashboard/Vector4.png" alt="" />
+            <span class="fw-bold">ACCESS</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard-client-billing.html">
+            <img src="images/dashboard/Vector5.png" alt="" />
+            <span class="fw-bold">BILLING</span>
+          </a>
+        </li>
+        <h1 class="fw-bold">Other</h1>
+        <li>
+          <a href="#" class="bg-transparent" id="click-alert">
+            <img src="images/dashboard/User_fill.png" alt="" />
+            <span class="fw-bold">Users</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="bg-transparent">
+            <img src="images/dashboard/credit card.png" alt="" />
+            <span class="fw-bold">Top Up</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="main-content">
+      <div id="header">
+        <div class="header-left float-left">
+          <i id="toggle-left-menu" class="ion-android-menu">
+            <i data-feather="grid"></i>
+          </i>
+          <span class="fw-bold">Dashboard</span>
+          <span class="profile"
+            >Celline
+            <img
+              src="images/dashboard/User_cicrle_duotone.png"
+              width="37"
+              alt=""
+          /></span>
+        </div>
+      </div>
+
+      <div id="page-container">
+        <div class="alert" id="alert">
+          <span
+            class="closebtn"
+            onclick="this.parentElement.style.display='none';"
+            >&times;</span
+          >
+          <img src="images/dashboard/User_cicrle_duotone.png" alt="" />
+          <div class="row">
+            <h1>Profile Name</h1>
+            <div class="col">
+              <input
+                type="text"
+                class="form-control rounded-3"
+                placeholder="First name"
+                aria-label="First name"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="text"
+                class="form-control rounded-3"
+                placeholder="Last name"
+                aria-label="Last name"
+              />
+            </div>
+            <h1>Email</h1>
+            <div class="col-md-6">
+              <input
+                type="email"
+                class="form-control rounded-3"
+                id="inputEmail4"
+                placeholder="Email"
+              />
+            </div>
+            <a href="">Reset Password</a>
+            <a href="home.html" class="log-out"
+              ><img src="images/dashboard/Sign_out_circle.png" alt="" />Log
+              Out</a
+            >
+          </div>
+        </div>
+      </div>
+        <div class="create-compute">
+          <div class="text-compute">
+            <a href="dashboard-client-compute.html"
+              ><i data-feather="arrow-left" class="feather"></i
+            ></a>
+            <h1>Create Compute</h1>
+          </div>
+          <form class="form-compute">
+            <h1>Menu OS</h1>
+            <p>Pilih Sistem Operasi Sesuai Kebutuhan Anda</p>
+            <div class="radio-section">
+              <label class="label-radio">
+                <input type="radio" name="plan" value="hobby" />
+                <img
+                  class="radio-img"
+                  src="images/images-compute/debian.png"
+                  alt=""
+                />
+                <span class="radio-check"
+                  ><i data-feather="check-square" class="check-icon"></i
+                ></span>
+                <h1 class="radio-os-view">Debian</h1>
+                <div class="select">
+                  <select>
+                    <option class="option-none">Pilih Versi</option>
+                    <option value="1">Debian 10</option>
+                    <option value="2">Debian 11</option>
+                    <option value="3">Debian 12</option>
+                  </select>
+                </div>
+              </label>
+              <label  class="label-radio">
+                <input type="radio" name="plan" value="growth" />
+                <img
+                  class="radio-img"
+                  src="images/images-compute/almalinux.png"
+                  alt=""
+                />
+                <span class="radio-check"
+                  ><i data-feather="check-square" class="check-icon"></i
+                ></span>
+                <h1 class="radio-os-view">Almalinux</h1>
+                <div class="select">
+                  <select>
+                    <option class="option-none">Pilih Versi</option>
+                    <option value="2">Almalinux 8</option>
+                    <option value="3">Almalinux 9</option>
+                  </select>
+                </div>
+              </label>
+              <label  class="label-radio">
+                <input type="radio" name="plan" value="business" />
+                <img
+                  class="radio-img"
+                  src="images/images-compute/centos.png"
+                  alt=""
+                />
+                <span class="radio-check"
+                  ><i data-feather="check-square" class="check-icon"></i
+                ></span>
+                <h1 class="radio-os-view">Centos</h1>
+                <div class="select">
+                  <select>
+                    <option class="option-none">Pilih Versi</option>
+                    <option value="1">Centos 7</option>
+                    <option value="2">Centos 8</option>
+                    <option value="3">Centos 9</option>
+                  </select>
+                </div>
+              </label>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn-menu" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              Selengkapnya
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title fw-bold"  id="exampleModalLabel">Pilih Sistem Operasi</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <label  class="label-radio">
+                                      <input type="radio" name="plan" value="business" />
+                                      <img
+                                        class="radio-img"
+                                        src="images/images-compute/windows.png"
+                                        alt=""
+                                      />
+                                      <span class="radio-check"
+                                        ><i data-feather="chevrons-left" class="check-icon-menu"></i
+                                      ></span>
+                                      <h1 class="radio-os-menu">Windows</h1>
+                                      <div class="select-menu">
+                                        <select class="select-sebmenu">
+                                          <option class="option-none">Pilih Versi</option>
+                                          <option value="1">Ubuntu Server 18.04</option>
+                                          <option value="2">Ubuntu Server 22.04</option>
+                                          <option value="3">Ubuntu Server 24.04</option>
+                                        </select>
+                                      </div>
+                                    </label>
+                                    <label  class="label-radio">
+                                      <input type="radio" name="plan" value="growth" />
+                                      <img
+                                      class="radio-img"
+                                        src="images/images-compute/almalinux.png"
+                                        alt=""
+                                      />
+                                      <span class="radio-check"
+                                        ><i data-feather="chevrons-left" class="check-icon-menu"></i
+                                      ></span>
+                                      <h1 class="radio-os-menu">Almalinux</h1>
+                                      <div class="select-menu">
+                                        <select class="select-sebmenu">
+                                          <option class="option-none">Pilih Versi</option>
+                                          <option value="2">Almalinux 8</option>
+                                          <option value="3">Almalinux 9</option>
+                                        </select>
+                                      </div>
+                                    </label>
+                                    <label  class="label-radio">
+                                      <input type="radio" name="plan" value="business" />
+                                      <img
+                                        class="radio-img"
+                                        src="images/images-compute/ubuntu.png"
+                                        alt=""
+                                      />
+                                      <span class="radio-check"
+                                        ><i data-feather="chevrons-left" class="check-icon-menu"></i
+                                      ></span>
+                                      <h1 class="radio-os-menu">Ubuntu</h1>
+                                      <div class="select-menu">
+                                        <select class="select-sebmenu">
+                                          <option class="option-none">Pilih Versi</option>
+                                          <option value="1">Ubuntu Server 18.04</option>
+                                          <option value="2">Ubuntu Server 22.04</option>
+                                          <option value="3">Ubuntu Server 24.04</option>
+                                        </select>
+                                      </div>
+                                    </label>
+                                    <label  class="label-radio">
+                                      <input type="radio" name="plan" value="hobby" />
+                                      <img
+                                        class="radio-img"
+                                        src="images/images-compute/debian.png"
+                                        alt=""
+                                      />
+                                      <span class="radio-check"
+                                        ><i data-feather="chevrons-left" class="check-icon-menu"></i
+                                      ></span>
+                                      <h1 class="radio-os-menu">Debian</h1>
+                                      <div class="select-menu">
+                                        <select class="select-sebmenu">
+                                          <option class="option-none">Pilih Versi</option>
+                                          <option value="1">Debian 10</option>
+                                          <option value="2">Debian 11</option>
+                                          <option value="3">Debian 12</option>
+                                        </select>
+                                      </div>
+                                    </label>
+                                    <label  class="label-radio">
+                                      <input type="radio" name="plan" value="business" />
+                                      <img
+                                        class="radio-img"
+                                        src="images/images-compute/centos.png"
+                                        alt=""
+                                      />
+                                      <span class="radio-check"
+                                        ><i data-feather="chevrons-left" class="check-icon-menu"></i
+                                      ></span>
+                                      <h1 class="radio-os-menu">Centos</h1>
+                                      <div class="select-menu">
+                                        <select class="select-sebmenu">
+                                          <option class="option-none">Pilih Versi</option>
+                                          <option value="1">Centos 7</option>
+                                          <option value="2">Centos 8</option>
+                                          <option value="3">Centos 9</option>
+                                        </select>
+                                      </div>
+                                    </label>
+                                    <label  class="label-radio">
+                                      <input type="radio" name="plan" value="growth" />
+                                      <img
+                                        class="radio-img"
+                                        src="images/images-compute/opensuse.png"
+                                        alt=""
+                                      />
+                                      <span class="radio-check"
+                                        ><i data-feather="chevrons-left" class="check-icon-menu"></i
+                                      ></span>
+                                      <h1 class="radio-os-menu">OpenSUSE</h1>
+                                      <div class="select-menu">
+                                        <select class="select-sebmenu">
+                                          <option class="option-none">Pilih Versi</option>
+                                          <option value="1">OpenSUSE Leap 15.4</option>
+                                        </select>
+                                      </div>
+                                    </label>
+                                    <label  class="label-radio">
+                                      <input type="radio" name="plan" value="hobby" />
+                                      <img
+                                        class="radio-img"
+                                        src="images/images-compute/fedora.png"
+                                        alt=""
+                                      />
+                                      <span class="radio-check"
+                                        ><i data-feather="chevrons-left" class="check-icon-menu"></i
+                                      ></span>
+                                      <h1 class="radio-os-menu">Fedora</h1>
+                                      <div class="select-menu">
+                                        <select class="select-sebmenu">
+                                          <option class="option-none">Pilih Versi</option>
+                                          <option value="1">Fedora 36</option>
+                                        </select>
+                                      </div>
+                                    </label>
+                                    <label  class="label-radio">
+                                      <input type="radio" name="plan" value="business" />
+                                      <img
+                                        class="radio-img"
+                                        src="images/images-compute/cloudlinux.png"
+                                        alt=""
+                                      />
+                                      <span class="radio-check"
+                                        ><i data-feather="chevrons-left" class="check-icon-menu"></i
+                                      ></span>
+                                      <h1 class="radio-os-menu">Cloud Linux</h1>
+                                      <div class="select-menu">
+                                        <select class="select-sebmenu">
+                                          <option class="option-none">Pilih Versi</option>
+                                          <option value="1">Cloud Linux 6</option>
+                                          <option value="2">Cloud Linux 7</option>
+                                          <option value="3">Cloud Linux 8</option>
+                                          <option value="3">Cloud Linux 9</option>
+                                        </select>
+                                      </div>
+                                    </label>
+                                    <label class="label-radio">
+                                      <input type="radio" name="plan" value="business" />
+                                      <img
+                                        class="radio-img"
+                                        src="images/images-compute/rocky linux.png"
+                                        alt=""
+                                      />
+                                      <span class="radio-check"
+                                        ><i data-feather="chevrons-left" class="check-icon-menu"></i
+                                      ></span>
+                                      <h1 class="radio-os-menu">Rocky Linux</h1>
+                                      <div class="select-menu">
+                                        <select class="select-sebmenu">
+                                          <option class="option-none">Pilih Versi</option>
+                                          <option value="1">Rocky Linux 8</option>
+                                          <option value="2">Rocky linux 9</option>
+                                        </select>
+                                      </div>
+                                    </label>
+                                    <label  class="label-radio">
+                                      <input type="radio" name="plan" value="business" />
+                                      <img
+                                        class="radio-img"
+                                        src="images/images-compute/rhel.png"
+                                        alt=""
+                                      />
+                                      <span class="radio-check"
+                                        ><i data-feather="chevrons-left" class="check-icon-menu"></i
+                                      ></span>
+                                      <h1 class="radio-os-menu">Rhel</h1>
+                                      <div class="select-menu">
+                                        <select class="select-sebmenu">
+                                          <option class="option-none">Pilih Versi</option>
+                                          <option value="1">Red Hat Enterprise Linux 8</option>
+                                          <option value="2">Red Hat Enterprise Linux 8</option>
+                                        </select>
+                                      </div>
+                                    </label>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn-menu">Save</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+            </div>
+            <hr>
+            <div class="compute-size">
+              <!-- Button trigger modal -->
+               <h1>Menu CPU</h1>
+               <p>Pilih paket CPU yang anda butuhkan</p>
+               <div class="submenu-check">
+                <section class="selection" id="guest">
+                 <div class="cardscroll">
+                 <label class="card-label">
+                     <input type="radio" name="guest" class="card-radio">
+                     <div class="card-input guest">
+                      <div class="paket-menu">
+                        <h1>CPU</h1>
+                        <h1>RAM</h1>
+                        <h1>ROM</h1>
+                      </div>
+                      <div class="paket-harga">
+                        <h1>2GB</h1>
+                        <h1>4GB</h1>
+                        <h1>16GB</h1>
+                      </div>
+                     </div>
+                    </input>
+                   </label>
+                  <label class="card-label">
+                      <input type="radio" name="guest" class="card-radio">
+                      <div class="card-input guest">
+                        <div class="paket-menu">
+                          <h1>CPU</h1>
+                          <h1>RAM</h1>
+                          <h1>ROM</h1>
+                        </div>
+                        <div class="paket-harga">
+                          <h1>4GB</h1>
+                          <h1>8GB</h1>
+                          <h1>32GB</h1>
+                        </div>
+                      </div>
+                    </input>
+                  </label>
+                  <label class="card-label">
+                      <input type="radio" name="guest" class="card-radio"
+                      ><div class="card-input guest">
+                        <div class="paket-menu">
+                          <h1>CPU</h1>
+                          <h1>RAM</h1>
+                          <h1>ROM</h1>
+                        </div>
+                        <div class="paket-harga">
+                          <h1>8GB</h1>
+                          <h1>16GB</h1>
+                          <h1>64GB</h1>
+                        </div>
+                      </div>
+                      </input>
+                  </label>
+                    <label class="card-label">
+                      <input type="radio" name="guest" class="card-radio">
+                      <div class="card-input guest">
+                        <div class="paket-menu">
+                          <h1>CPU</h1>
+                          <h1>RAM</h1>
+                          <h1>ROM</h1>
+                        </div>
+                        <div class="paket-harga">
+                          <h1>8GB</h1>
+                          <h1>16GB</h1>
+                          <h1>128GB</h1>
+                        </div>
+                      </div>
+                      </input>
+                  </label>
+                  <label class="card-label">
+                      <input type="radio" name="guest" class="card-radio">
+                      <div class="card-input guest">
+                        <div class="paket-menu">
+                          <h1>CPU</h1>
+                          <h1>RAM</h1>
+                          <h1>ROM</h1>
+                        </div>
+                        <div class="paket-harga">
+                          <h1>16GB</h1>
+                          <h1>16GB</h1>
+                          <h1>256GB</h1>
+                        </div>
+                      </div>
+                      </input>
+                  </label>
+                    <div>
+                </section>
+                <div class="custom-menu">
+                  <button class="btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Custom Paket</button>
+
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasRightLabel" >Custom Paket</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div class="server-clouds-range">
+                        <br />
+                        <br />
+                        <br />
+                        <div class="slidecontainer">
+                          <h2 class="text-dark">CPU</h2>
+                          <input
+                            type="range"
+                            min="2"
+                            max="8"
+                            value="0"
+                            step="2"
+                            class="slider"
+                            id="myRange"
+                          />
+                          <p><span id="demo"></span> Core</p>
+                        </div>
+                        <div class="slidecontainer">
+                          <h2 class="text-dark">RAM</h2>
+                          <input
+                            type="range"
+                            min="2"
+                            max="8"
+                            value="0"
+                            step="2"
+                            class="slider"
+                            id="myRange2"
+                          />
+                          <p><span id="demo2"></span> Core</p>
+                        </div>
+                        <div class="slidecontainer mb-3">
+                          <h2 class="text-dark">Storage</h2>
+                          <input
+                            type="range"
+                            min="20"
+                            max="500"
+                            step="20"
+                            value="0"
+                            class="slider"
+                            id="myRange3"
+                          />
+                          <p><span id="demo3"></span> GB</p>
+                        </div>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="server-clouds-range-btn">
+                            BUAT SEKARANG
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+
+            </div>
+            <div class="compute-user mt-4">
+              <div class="form-user mb-3">
+                <label for="floatingPassword">Password</label>
+                <input type="password"  class="input rounded-pill" id="floatingPassword" placeholder="Masukkan Password">
+                <i data-feather="eye" class="field-icon" onclick="handleShowPasword()"></i>
+              </div>
+              <div class="form-user ">
+                <label for="floatingPassword2">Confirm Password</label>
+                <input type="password" class="input rounded-pill" id="floatingPassword2" placeholder="Masukkan Password">
+                <i data-feather="eye" class="field-icon2" onclick="handleShowConfirmPasword()"></i>
+              </div>
+              <div class="form-user mb-3">
+                <label for="floatingInput">Username</label>
+                <input type="email" class="input rounded-pill" id="floatingInput" placeholder="Masukkan Username"  autocomplete="off">
+              </div>
+            </div>
+            <button type="submit" class="btn-menu">Simpan</button>
+          </form>
+        </div>
+    </div>
+    <span id="show-lable">Hello</span>
+
+    <script>
+      feather.replace();
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#click-alert").click(function () {
+          $("#alert").show();
+        });
+        $("#alert").hide();
+      });
+    </script>
+    <script>
+      var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+    
+    slider.oninput = function () {
+      output.innerHTML = this.value;
+    };
+    var slider2 = document.getElementById("myRange2");
+    var output2 = document.getElementById("demo2");
+    output2.innerHTML = slider2.value;
+    
+    slider2.oninput = function () {
+      output2.innerHTML = this.value;
+    };
+    var slider3 = document.getElementById("myRange3");
+    var output3 = document.getElementById("demo3");
+    output3.innerHTML = slider3.value;
+    
+    slider3.oninput = function () {
+      output3.innerHTML = this.value;
+    };
+    </script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+  </body>
+</html>
